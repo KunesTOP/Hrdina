@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textHeroName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Tomas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textKills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="pocetzabiti"
+        app:layout_constraintEnd_toEndOf="@+id/imageRip"
+        app:layout_constraintStart_toStartOf="@+id/imageRip"
+        app:layout_constraintTop_toBottomOf="@+id/imageRip" />
+
+    <TextView
+        android:id="@+id/textHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="zivoty"
+        app:layout_constraintEnd_toEndOf="@+id/imageHealth"
+        app:layout_constraintStart_toStartOf="@+id/imageHealth"
+        app:layout_constraintTop_toBottomOf="@+id/imageHealth" />
+
+    <TextView
+        android:id="@+id/textAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="utok"
+        app:layout_constraintEnd_toEndOf="@+id/imageSword"
+        app:layout_constraintStart_toStartOf="@+id/imageSword"
+        app:layout_constraintTop_toBottomOf="@+id/imageSword" />
+
+    <TextView
+        android:id="@+id/textDefense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="obrana"
+        app:layout_constraintEnd_toEndOf="@+id/imageShield"
+        app:layout_constraintStart_toStartOf="@+id/imageShield"
+        app:layout_constraintTop_toBottomOf="@+id/imageShield" />
+
+    <TextView
+        android:id="@+id/textHealing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="leceni"
+        app:layout_constraintEnd_toEndOf="@+id/imageMedical"
+        app:layout_constraintStart_toStartOf="@+id/imageMedical"
+        app:layout_constraintTop_toBottomOf="@+id/imageMedical" />
+
+    <ImageView
+        android:id="@+id/imageHealth"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageSword"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHeroName"
+        app:srcCompat="@drawable/hearth"
+        />
+
+    <ImageView
+        android:id="@+id/imageSword"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="27dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageHealth"
+        app:layout_constraintEnd_toStartOf="@+id/imageShield"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageHealth"
+        app:layout_constraintTop_toTopOf="@+id/imageHealth"
+        app:srcCompat="@drawable/sword"
+         />
+
+    <ImageView
+        android:id="@+id/imageShield"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSword"
+        app:layout_constraintEnd_toStartOf="@+id/imageMedical"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageSword"
+        app:layout_constraintTop_toTopOf="@+id/imageSword"
+        app:srcCompat="@drawable/shield"
+         />
+
+    <ImageView
+        android:id="@+id/imageMedical"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="27dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageShield"
+        app:layout_constraintEnd_toStartOf="@+id/imageRip"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageShield"
+        app:layout_constraintTop_toTopOf="@+id/imageShield"
+        app:srcCompat="@drawable/medical"
+         />
+
+    <ImageView
+        android:id="@+id/imageRip"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMedical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageMedical"
+        app:layout_constraintTop_toTopOf="@+id/imageMedical"
+        app:srcCompat="@drawable/rip"
+         />
+
+    <ImageView
+        android:id="@+id/imageNorthWest"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageNorth"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHealth"
+        app:srcCompat="@drawable/forest"
+        />
+
+    <ImageView
+        android:id="@+id/imageNorth"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageNorthWest"
+        app:layout_constraintEnd_toStartOf="@+id/imageNorthEast"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageNorthWest"
+        app:layout_constraintTop_toTopOf="@+id/imageNorthWest"
+        app:srcCompat="@drawable/meadow"
+         />
+
+    <ImageView
+        android:id="@+id/imageNorthEast"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageNorth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageNorth"
+        app:layout_constraintTop_toTopOf="@+id/imageNorth"
+        app:srcCompat="@drawable/river"
+         />
+
+    <ImageView
+        android:id="@+id/imageWest"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/imageNorthWest"
+        app:layout_constraintStart_toStartOf="@+id/imageNorthWest"
+        app:layout_constraintTop_toBottomOf="@+id/imageNorthWest"
+        app:srcCompat="@drawable/meadow"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageCenter"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageNorth"
+        app:layout_constraintStart_toStartOf="@+id/imageNorth"
+        app:layout_constraintTop_toBottomOf="@+id/imageNorth"
+        app:srcCompat="@drawable/knight"
+        />
+
+    <ImageView
+        android:id="@+id/imageEast"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageNorthEast"
+        app:layout_constraintStart_toStartOf="@+id/imageNorthEast"
+        app:layout_constraintTop_toBottomOf="@+id/imageNorthEast"
+        app:srcCompat="@drawable/bridge"
+        />
+
+    <ImageView
+        android:id="@+id/imageSouthWest"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageWest"
+        app:layout_constraintStart_toStartOf="@+id/imageWest"
+        app:layout_constraintTop_toBottomOf="@+id/imageWest"
+        app:srcCompat="@drawable/skeleton"
+         />
+
+    <ImageView
+        android:id="@+id/imageSouth"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageCenter"
+        app:layout_constraintStart_toStartOf="@+id/imageCenter"
+        app:layout_constraintTop_toBottomOf="@+id/imageCenter"
+        app:srcCompat="@drawable/sword"
+         />
+
+    <ImageView
+        android:id="@+id/imageSouthEast"
+        android:layout_width="55dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageEast"
+        app:layout_constraintStart_toStartOf="@+id/imageEast"
+        app:layout_constraintTop_toBottomOf="@+id/imageEast"
+        app:srcCompat="@drawable/river"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>
